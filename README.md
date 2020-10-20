@@ -8,7 +8,6 @@ If you want to skip the nerd stuff and get my CV straight away run this in your 
 ```
 ```python
     import requests as r
-    import json
     html = r.get("https://joseph-api.herokuapp.com/cv/all")
     print(html.text)
 ```
@@ -31,5 +30,7 @@ If you want to skip the nerd stuff and get my CV straight away run this in your 
 
 `GET /cv/projects`
 ***
-<sub>have fun!</sub>
+<sub>have fun!
+
+- joe</sub>
 
