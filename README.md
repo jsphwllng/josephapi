@@ -19,6 +19,8 @@ or visit visit [here](/cv/all) but that's no fun at all!
 
 `GET /cv/all`
 
+`GET /cv/about`
+
 `GET /cv/contact_details`
 
 `GET /cv/languages`

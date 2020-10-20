@@ -30,6 +30,10 @@ def index():
     return jsonify({f"request.method": "not allowed!"})
 
 
+@app.route("/cv/", methods=["GET"])
+def no():
+  return "/cv is not a valid domain, sorry!"
+
 @app.route('/cv/all', methods=["GET"])
 def full_cv():
   full_cv = jsonify(
