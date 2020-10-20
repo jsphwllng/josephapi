@@ -1,4 +1,4 @@
 import requests as r
 
-html = r.get("http://127.0.0.1:5000/")
+html = r.get("https://glacial-citadel-82094.herokuapp.com/cv/all")
 print(html.text)

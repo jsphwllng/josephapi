@@ -25,7 +25,7 @@ or visit visit [here](/cv/all) but that's no fun at all!
 
 `GET /cv/hobbies`
 
-`GET /cv/experience`
+`GET /cv/experiences`
 
 `GET /cv/projects`
 ***
