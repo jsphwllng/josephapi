@@ -9,10 +9,10 @@ If you want to skip the nerd stuff and get my CV straight away run this in your 
 ```python
     import requests as r
     import json
-    html = r.get("http://127.0.0.1:5000/cv/all")
+    html = r.get("https://joseph-api.herokuapp.com/cv/all")
     print(html.text)
 ```
-or visit visit [here](/cv/all) but that's no fun at all!
+or visit visit [here](https://joseph-api.herokuapp.com/cv/all) but that's no fun at all!
 
 ***
 **Uses**
