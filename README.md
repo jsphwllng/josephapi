@@ -1,5 +1,5 @@
 # A RESTful API of [@jsphwllng's](https://twitter.com/jsphWllng) CV 😎
-You can `get` my CV, contact details, etc. As this is relatively sensitive information I will not be allowing `POST` requests.
+You can `GET` my CV, contact details, etc. As this is relatively sensitive information I will not be allowing `POST`, `PATCH` or `DELETE` requests.
 
 If you want to skip the nerd stuff and get my CV straight away run this in your terminal:
 ```bash
@@ -12,7 +12,7 @@ If you want to skip the nerd stuff and get my CV straight away run this in your 
     html = r.get("https://joseph-api.herokuapp.com/cv/all")
     print(html.text)
 ```
-or visit [here](https://joseph-api.herokuapp.com/cv/all) but that's no fun at all...
+[or visit here](https://joseph-api.herokuapp.com/cv/all) but that's no fun at all...
 
 ***
 **Uses**
