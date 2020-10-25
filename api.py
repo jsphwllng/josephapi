@@ -10,6 +10,9 @@ comments = {}
 app = Flask(__name__)
 api = Api(app)
 
+@app.errorhandler(404)
+def page_not_found(e):
+  return "<h1>page not found</h1>", 404
 
 @app.route("/", methods=["GET"])
 def index():
