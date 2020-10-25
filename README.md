@@ -28,7 +28,9 @@ If you want to skip the ahead and get my CV straight away run this in your UNIX 
 **Where to contact Joe**
 
 [linkedin](https://www.linkedin.com/in/josephwelling/)
+
 [twitter](twitter.com/jsphwllng)
+
 [github](https://github.com/jsphwllng/)
 
 ***
