@@ -1,3 +1,5 @@
+from flask import jsonify
+
 about = 'A diplomat turned traveler turned developer. Experienced in development and managing teams. Having lived in 4 countries I have strong intercultural communication skills. I love learning new tech, automating my work, overusing the word groovy and eating barbecue.'
 contact_details = ["jsphwllng@gmail.com",
                    "https://github.com/jsphwllng", "https://twitter.com/jsphWllng"]

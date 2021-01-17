@@ -1,10 +1,9 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, redirect
 from flask_restful import Resource, Api, reqparse
 import markdown
 import markdown.extensions.fenced_code
 from pygments.formatters import HtmlFormatter
 import cv_info
-import json
 
 comments = {}
 
@@ -14,7 +13,7 @@ api = Api(app)
 
 @app.errorhandler(404)
 def page_not_found(e):
-  return "<h1>page not found</h1>", 404
+  return redirect("/", code=302)
 
 
 @app.route("/", methods=["GET"])
@@ -34,21 +33,6 @@ def index():
     return md_template
   else:
     return jsonify({f"request.method": "not allowed!"})
-
-
-@app.route('/all', methods=["GET"])
-def full_cv():
-  full_cv = jsonify(
-      cv_info.about,
-      cv_info.contact_details,
-      cv_info.languages,
-      cv_info.experiences,
-      cv_info.projects,
-      cv_info.hobbies
-  )
-  if (request.method == 'GET'):
-    return full_cv
-
 
 @app.route("/contact_details", methods=["GET"])
 def contact_details():
@@ -89,6 +73,13 @@ def experiences():
        cv_info.experiences
    )
 
+
+@app.route("/about", methods=["GET"])
+def about():
+  if (request.method == 'GET'):
+   return jsonify(
+       cv_info.about
+   )
 
 if __name__ == '__main__':
     app.run(debug=True)

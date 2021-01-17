@@ -1,16 +1,7 @@
 # A RESTful API of [@jsphwllng's](https://twitter.com/jsphWllng) CV.
 
-If you want to skip ahead and get my CV straight away run this in your UNIX terminal:
-```bash
-    curl https://joseph-api.herokuapp.com/all || json_pp
-```
-[or visit here](https://joseph-api.herokuapp.com/all).
-
-***
 
 **Uses**
-
-`GET /all`
 
 `GET /about`
 
