@@ -62,15 +62,15 @@ def contact_details():
 def languages():
   if (request.method == 'GET'):
      return jsonify(
-       cv_info.languages
-                    )
+         cv_info.languages
+     )
 
 
 @app.route("/hobbies", methods=["GET"])
 def hobbies():
   if (request.method == 'GET'):
     return jsonify(
-      cv_info.hobbies
+        cv_info.hobbies
     )
 
 
@@ -78,7 +78,7 @@ def hobbies():
 def projects():
   if (request.method == 'GET'):
      return jsonify(
-       cv_info.projects
+         cv_info.projects
      )
 
 
@@ -86,7 +86,7 @@ def projects():
 def experiences():
   if (request.method == 'GET'):
    return jsonify(
-     cv_info.experiences
+       cv_info.experiences
    )
 
 
