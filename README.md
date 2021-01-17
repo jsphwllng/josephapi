@@ -1,28 +1,29 @@
 # A RESTful API of [@jsphwllng's](https://twitter.com/jsphWllng) CV.
-You can `GET` my CV, contact details, etc. As this is relatively sensitive information I will not be allowing `POST`, `PATCH` or `DELETE` requests.
 
 If you want to skip ahead and get my CV straight away run this in your UNIX terminal:
 ```bash
-    curl https://joseph-api.herokuapp.com/cv/all || json_pp
+    curl https://joseph-api.herokuapp.com/all || json_pp
 ```
-[or visit here](https://joseph-api.herokuapp.com/cv/all).
+[or visit here](https://joseph-api.herokuapp.com/all).
 
 ***
+
 **Uses**
 
-`GET /cv/all`
+`GET /all`
 
-`GET /cv/about`
+`GET /about`
 
-`GET /cv/contact_details`
+`GET /contact_details`
 
-`GET /cv/languages`
+`GET /languages`
 
-`GET /cv/hobbies`
+`GET /hobbies`
 
-`GET /cv/experiences`
+`GET /experiences`
 
-`GET /cv/projects`
+`GET /projects`
+
 ***
 
 **Where to contact Joe**

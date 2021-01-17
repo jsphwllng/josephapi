@@ -1,0 +1,7 @@
+__pycache__
+.vscode
+env
+venv
+cv_info.py
+Procfile
+runtime.txt
